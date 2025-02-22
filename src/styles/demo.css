@@ -1,0 +1,40 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 16px; /* Espacio entre las cards */
+}
+
+.card {
+  width: 100%; /* Ancho completo del contenedor */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd; /* Borde para mejor visualización */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.card-img-top {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 200px; /* Altura fija para la imagen */
+  object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+}
+
+.card-body {
+  padding: 16px; /* Espaciado interno */
+  flex: 1; /* Hace que el cuerpo de la card ocupe el espacio restante */
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Dos columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+}
