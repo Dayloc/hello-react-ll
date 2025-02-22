@@ -8,15 +8,20 @@
   width: 100%; /* Ancho completo del contenedor */
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd; /* Borde para mejor visualización */
+  border: 1px solid #e23131; /* Borde para mejor visualización */
   border-radius: 8px; /* Bordes redondeados */
   overflow: hidden; /* Evita que el contenido se desborde */
+  background-color: dimgray;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(97, 173, 240);
 }
 
 .card-img-top {
   width: 100%; /* Ancho completo del contenedor */
   height: 200px; /* Altura fija para la imagen */
   object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+  margin-top: 10px;
 }
 
 .card-body {
