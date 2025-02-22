@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router";
+
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -21,6 +23,11 @@ const Home = () => {
 				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
 				love!
 			</p>
+			<div>
+
+				<Link to='/demo'>Demo</Link>
+			</div>
+
 		</div>
 	);
 };
